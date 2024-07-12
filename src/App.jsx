@@ -32,16 +32,16 @@ function App() {
     fetchGifs(endpoint);
   };
 
-  return (
+return (
     <div>
-      <h1 className='title'>Tenor Gifs</h1>
+      <h1 className='title'>Giphy</h1>
       <form onSubmit={handleSearch} className='container'>
         <input
           className='input'
           type="text"
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
-          placeholder="Buscar en Tenor"
+          placeholder="Buscar en Giphy"
         />
         <button className='search' type="submit">Search</button>
       </form>
